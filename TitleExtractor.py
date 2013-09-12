@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import urllib2
 import node
 
-url_string = "http://sports.163.com/13/0912/08/98IDS0Q000051C89.html"
 tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'b', 'p']
 
 def extract_title(url):
