@@ -7,14 +7,16 @@ import node
 tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'b', 'p']
 
 def extract_title(url):
-    page = urllib2.urlopen(url_string)
+    page = urllib2.urlopen(url)
     if not page:
-     print "Error down page" + url_string
+     print "Error down page" + url
     else:
         soup = BeautifulSoup(page, 'lxml')
 
         # get head title, this title is noisy
         head_title = soup.find('title').string
+
+        print soup.h1
 
         # append h1 ~ h6 p a
         node_list = []
