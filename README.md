@@ -1,4 +1,4 @@
 Title Extractor
 ===============
 
-only works for a few website for now, I will enhance it later if have time.
+Only works for a few websites, I will improve it later.

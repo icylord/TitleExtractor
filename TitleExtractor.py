@@ -16,8 +16,6 @@ def extract_title(url):
         # get head title, this title is noisy
         head_title = soup.find('title').string
 
-        print soup.h1
-
         # append h1 ~ h6 p a
         node_list = []
         for tag in tags:
@@ -45,6 +43,7 @@ def extract_title(url):
             return head_title
 
 if __name__ == "__main__":
+
     url_string = "http://sports.163.com/13/0912/08/98IDS0Q000051C89.html"
     print "Extracted title is: " +  extract_title(url_string)
     url_string = "http://www.5eplay.com/group/cs/topic/5642"
@@ -52,4 +51,10 @@ if __name__ == "__main__":
     url_string = "http://business.sohu.com/20130912/n386445665.shtml"
     print "Extracted title is: " +  extract_title(url_string)
     url_string = "http://jandan.net/2013/09/12/3nes.html"
+    print "Extracted title is: " +  extract_title(url_string)
+    url_string = "http://dzs.pcgames.com.cn/303/3036000.html"
+    print "Extracted title is: " +  extract_title(url_string)
+    url_string = "http://www.v2ex.com/t/82015"
+    print "Extracted title is: " +  extract_title(url_string)
+    url_string = "http://politics.people.com.cn/n/2013/0912/c1001-22897785.html"
     print "Extracted title is: " +  extract_title(url_string)
